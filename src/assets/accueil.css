@@ -1,0 +1,244 @@
+.container {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.container-profil{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(15, 23, 42);
+    border-width: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.img-profil{
+    width: 100%;
+}
+
+.text-accueil{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.text-accueil .text-nom{
+    /* Le dégradé */
+  background: linear-gradient(to right, #6366f1, #10b981); /* from-primary → to-accent */
+  
+  /* Appliquer le dégradé seulement au texte */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Couleur du texte transparente pour voir le dégradé */
+  color: transparent;
+}
+
+.text-paragraph {
+  font-size: 1.2rem;
+  color: rgb(167, 167, 167);
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-filter{
+    background-color: rgb(51, 65, 85);
+    color: rgb(213, 213, 213);
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    border-style: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    
+}
+
+.btn-filter.active{
+    border-style: double;
+    box-shadow: 0 0 0 2px #6366f1,      /* ring */
+              0 0 0 4px #0f172a; 
+}
+
+.btn-filter:hover{
+    background-color: rgb(68, 86, 112);
+    cursor: pointer;
+    color: white;
+}
+
+
+/*projects grid*/
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  /* flex-wrap: wrap; */
+  gap: 24px; /* gap-6 */
+  /* justify-content: center; */
+  margin-top: 60px;
+  margin-bottom: 60px;
+  place-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/* Quand l’écran est moyen (tablette) → 2 colonnes */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Quand l’écran est petit (téléphone) → 1 colonne */
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* .titreProjet{
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 60px;
+} */
+
+
+/* Container principal */
+.project-card {
+  background-color: #0f172a; /* bg-card */
+  border-radius: 12px; /* rounded-xl */
+  overflow: hidden;
+  border: 1px solid #334155; /* border-slate-700 */
+  transition: all 0.3s ease;
+  /* width: 25; */
+}
+
+.project-card:hover {
+  border-color: #6366f1; /* primary */
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.2); /* hover:shadow-primary/20 */
+}
+
+/* HEADER IMAGE */
+.image-header {
+  height: 160px; /* h-40 */
+  background: linear-gradient(135deg, #1e3a8a, #0f172a); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Carrés grille */
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1%, transparent 1%);
+  background-size: 20px 20px;
+}
+
+/* Icone */
+.image-header .icon {
+  font-size: 3rem; /* text-5xl */
+  color: #60a5fa; /* text-blue-400 */
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .icon {
+  transform: scale(1.1);
+}
+
+/* CONTENT */
+.content {
+  padding: 24px; /* p-6 */
+}
+
+/* Première ligne */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+/* Tag */
+.tag {
+  font-size: 10px;
+  font-weight: bold;
+  color: #60a5fa; /* blue-400 */
+  background-color: rgba(96, 165, 250, 0.1);
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* GitHub */
+.github {
+  color: #94a3b8; /* slate-400 */
+  transition: color 0.2s ease;
+}
+
+.github:hover {
+  color: white;
+}
+
+/* Titre + description */
+.title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 14px;
+  color: #94a3b8; /* slate-400 */
+  margin-bottom: 16px;
+}
+
+/* Technologies */
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tech-list span {
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #1e293b; /* slate-700 */
+  color: #cbd5e1; /* slate-300 */
+  border-radius: 4px;
+}
+
+/* Button */
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  background-color: #1e293b; /* slate-700 */
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #6366f1; /* primary */
+}
+

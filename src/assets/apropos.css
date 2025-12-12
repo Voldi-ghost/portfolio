@@ -1,0 +1,89 @@
+.apropos{
+    background-color: rgb(10, 19, 23);
+    margin: 30px;
+    padding: 50px;
+}
+
+.apropos .title h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apropos .maPhoto{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(15, 23, 42);
+    border-width: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.maPhoto img {
+    width: 100%;
+}
+
+.maDescription{
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+hr{
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: rgb(15, 23, 42);
+}
+
+.stack-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 120px;
+    background: #000;
+    padding: 13px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: .9rem;
+    color: #fafafa;
+}
+
+.card p {
+    font-size: .7rem;
+    color: #c0c0c0;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(140, 140, 140, 0.15);
+}
+
+.stack-title{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

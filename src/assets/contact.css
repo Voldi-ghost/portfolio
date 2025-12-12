@@ -1,0 +1,57 @@
+.contact{
+    margin: 30px auto;
+    padding: 50px;
+    background-image: url('/public/assets/arriereplan.png');
+    /* background-position: ; */
+    background-size: cover;
+    background-color: #0b1221;
+    width: 80%;
+}
+
+.contact-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-texte{
+    max-width: 450px;
+    background-color: #263453;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contact-texte h2{
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: white;
+}
+
+.contact-texte p{
+    font-size: 1rem;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+
+.contact-texte button{
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+
+.contact-texte button:hover{
+    background-color: white;
+    color: #0b1221;
+}
+
+.image{
+    max-width: 450px;
+}
+
+.image img{
+    width: 100%;
+}

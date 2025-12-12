@@ -1,0 +1,143 @@
+header {
+  width: 100%;
+  background: rgba(15, 23, 42, 0.5); /* bg-slate-900/50 */
+  backdrop-filter: blur(8px); /* backdrop-blur-md */
+  border-bottom: 1px solid #1e293b; /* border-slate-800 */
+  position: sticky; /* sticky top-0 */
+  top: 0;
+  z-index: 50;
+}
+
+.navbar {
+  max-width: 72rem; /* max-w-6xl */
+  margin: 0 auto; /* mx-auto */
+  padding: 1rem 1rem; /* px-4 py-4 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-center {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-center a {
+  font-size: 1.2rem; /* text-base */
+  color: #cbd5e1; /* text-slate-300 */
+  transition: color 0.2s ease; /* transition-colors */
+}
+
+.menu-center a:hover {
+  color: rgb(99, 102, 241); /* text-primary */
+}
+
+/* LOGO */
+.navbar .logo {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold; /* font-bold */
+  color: white; /* text-white */
+  letter-spacing: -0.5px; /* tracking-tight */
+  text-decoration: none;
+}
+
+.navbar .logo .text-primary {
+  color: rgb(99, 102, 241);
+}
+
+.navbar .logo .text-white {
+  color: white;
+}
+
+/* social links */
+.navbar .social-links{
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .social-links a {
+  transition: color 0.2s ease; /* transition-colors */
+  color: white;
+}
+
+.navbar .social-links a:hover {
+  color: rgb(99, 102, 241); /* couleur "primary" ou personnalisée */
+}
+
+.navbar .social-links .fa-linkedin:hover {
+  color: #2563eb; /* hover:text-blue-500 */
+}
+
+.navbar .social-links .fa-envelope:hover {
+  color: #03ae61; /* hover:text-accent */
+}
+
+.navbar .social-links i {
+  font-size: 1.25rem; /* text-xl */
+}   
+
+
+/* Hambuger */
+
+.hamburger {
+  display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Barre du milieu légèrement décalée */
+.hamburger span.middle {
+    width: 70%;
+    align-self: flex-start;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-center,
+    .Contact-class {
+        display: none; /* cacher menu et contact par défaut */
+        flex-direction: column;
+        gap: 15px;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+
+    .menu-center.active {
+        display: flex; /* afficher quand hamburger cliqué */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span.middle {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
