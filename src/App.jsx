@@ -4,6 +4,7 @@ import Accueil from './Accueil'
 import Apropos from './Apropos'
 import Contact from './composants/Contact'
 import Footer from './composants/Footer'
+import Inu from './Inu'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Apropos/>
       <Contact/>
       <Footer/>
+      {/* <Inu/> */}
     </div>
   )
 }

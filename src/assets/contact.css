@@ -35,7 +35,7 @@
 }
 
 .contact-texte button{
-    width: 120px;
+    width: 150px;
     height: 40px;
     background-color: transparent;
     color: white;
@@ -55,3 +55,31 @@
 .image img{
     width: 100%;
 }
+
+
+
+
+@media (max-width: 800px) {
+    .contact{
+        /* padding: 0; */
+        padding-left:0 ;
+        padding-right: 0;
+    }
+    .contact-texte{
+        /* margin-left: 30px;
+        margin-right: 30px; */
+        width: 100%;
+    }
+
+    .contact-texte button{
+        width: 100px;
+    }
+    .image{
+        width: 100%;
+    }
+    .image img{
+    width: 100%;
+}
+}
+
+

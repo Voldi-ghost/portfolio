@@ -51,7 +51,7 @@ hr{
 }
 
 .card {
-    width: 120px;
+    width: 100px;
     background: #000;
     padding: 13px;
     text-align: center;
@@ -74,6 +74,16 @@ hr{
 .card p {
     font-size: .7rem;
     color: #c0c0c0;
+}
+
+@media (max-width: 768px) {
+   .apropos{
+    padding-left: 7px;
+    padding-right: 7px;
+   }
+    .card{
+        width: 80px;
+    }
 }
 
 .card:hover {

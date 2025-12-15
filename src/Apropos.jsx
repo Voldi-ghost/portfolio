@@ -16,7 +16,20 @@ export default function Apropos() {
       <div className="stack">
         <h2 className="stack-title">Mes Compétences Techniques</h2>
         <div className="stack-card">
-            {
+          <div class="swiper logo-swiper">
+            <div class="swiper-wrapper">
+                {
+                  stack.map((card)=>{
+                    <div class="swiper-slide">
+                      <img src={card.img} alt="" />
+                      rrr
+                    </div>
+                  })
+                }
+              
+            </div>
+          </div>
+            {/* {
                 stack.map((card) =>
                     <div className='card'>
                         <img src={card.img} alt="" />
@@ -24,7 +37,8 @@ export default function Apropos() {
                         <p>{card.category}</p>
                     </div>
                 )
-            }
+              
+            } */}
             {/* <div className="card">
                 <img src="ressource/html.png" alt="" srcset="" />
                 <h3>HTML</h3>
